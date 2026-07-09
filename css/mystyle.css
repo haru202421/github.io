@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f4f8fc; 
+    background: linear-gradient(135deg, #ffffff 0%, #f4f8fc 100%);
+    color: #333333;
+    font-family: "メイリオ", "Hiragino Sans", sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+p {
+    font-size: 90%;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 180%;
+}
+
+h2 {
+    font-size: 120%;
+    border-bottom: 1px dashed #003166;
+    border-left: 10px solid #003166;
+    padding-left: 7px;
+    margin-top: 30px;
+}
+
+/* ① ヘッダー内のレイアウト（floatとclear） */
+.site-header {
+    position: relative;
+    padding: 20px;
+    background-color: #003166;
+    color: #ffffff;
+}
+
+.logo-container {
+    float: left;        
+    width: 30%;         
+    text-align: left;
+}
+
+.logo-img {
+    max-width: 100%;    
+    width: 200px;       
+    height: auto;       
+}
+
+.shadow-text {
+    float: left;        
+    width: 70%;         
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.global-nav {
+    float: right;       
+    width: 70%;         
+    margin-top: 20px;
+}
+
+.global-nav ul {
+    font-weight: bold;  
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.global-nav li {
+    display: inline-block; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #ffffff;
+}
+
+.global-nav li:last-child {
+    border-right: none; 
+}
+
+/* ④ 各種リンクの擬似クラスと text-decoration の設定 */
+.global-nav a:link {
+    color: #ffffff;
+    text-decoration: none; /* 下線なし */
+    font-weight: bold;  
+}
+.global-nav a:visited {
+    color: #dddddd; /* 訪問後はやや薄いグレー */
+}
+.global-nav a:hover {
+    color: #ffcc00; /* ホバー時は黄色 */
+    text-decoration: underline; /* ホバー時のみ下線 */
+}
+.global-nav a:active {
+    color: #ff3300; /* クリックした瞬間は赤 */
+}
+
+/* 一般的なページ内リンク（目次など）の設定 */
+.page-links a:link {
+    color: #003166;
+    text-decoration: underline;
+}
+.page-links a:visited {
+    color: #551a8b;
+}
+.page-links a:hover {
+    color: #004a99;
+    text-decoration: none; /* ホバー時に下線を消す効果 */
+}
+.page-links a:active {
+    color: #ff0000;
+}
+
+.validator-links a {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+.validator-links a:hover {
+    color: #ffcc00 !important;
+}
+
+.clear-fix {
+    clear: both;        
+}
+
+/* メインレイアウト */
+article {
+    position: relative;
+    max-width: 800px;   
+    width: 100%;        
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ② 目次セクションのスタイル */
+.index-box {
+    background-color: #f0f4f8;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+.index-box ul {
+    padding-left: 20px;
+}
+
+.content-section {
+    border-bottom: 1px dashed #aaa;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.breadcrumb-container {
+    max-width: 800px;
+    margin: 15px auto 0 auto;
+    padding: 0 20px;
+}
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 85%;
+    color: #666666;
+}
+.breadcrumb li {
+    display: inline; 
+}
+.breadcrumb li+li:before {
+    content: " > ";
+    padding: 0 8px;
+    color: #cccccc;
+}
+.breadcrumb a:link {
+    color: #003166;
+    text-decoration: none;
+}
+.breadcrumb a:visited {
+    color: #003166;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+.step-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.step-image {
+    float: left;  
+    width: 30%;
+}
+.step-desc {
+    float: right; 
+    width: 65%;
+}
+
+.image-placeholder {
+    background: #e0e0e0; 
+    width: 100%; 
+    height: 120px; 
+    line-height: 120px; 
+    text-align: center; 
+    font-weight: bold; 
+    color: #666; 
+    border-radius: 4px;
+}
+
+/* その他パーツ */
+.info-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+ul.custom-list {
+    list-style-image: url('../image/bullet.png'); 
+    padding-left: 25px;
+}
+
+.back-to-top-container {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-scroll-top {
+    display: inline-block;
+    background-color: #003166;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 85%;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.btn-scroll-top:hover {
+    background-color: #004a99;
+}
+
+footer {
+    text-align: center;
+    background-color: #003166;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    clear: both;        
+}
+
+.validator-links {
+    margin-top: 10px;
+    font-size: 80%;
+    color: #cccccc;
+}
+
+
+@media print {
+    body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 12pt;
+    }
+    .site-header, footer, .global-nav, .breadcrumb-container, .back-to-top-container, .index-box {
+        display: none !important; /* ナビゲーションやボタン、バリデータ等は印刷しない */
+    }
+    article {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        border-left: 5px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+}
+
+
+@media screen and (max-width: 959px) {
+    .logo-container,
+    .shadow-text,
+    .global-nav {
+        float: none;    
+        width: 100%;    
+        text-align: center;
+    }
+
+    .shadow-text {
+        font-size: 1.5rem;
+        padding-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .global-nav {
+        margin-top: 10px;
+    }
+
+    .global-nav ul {
+        text-align: center; 
+    }
+
+    .global-nav li {
+        display: block; 
+        border-right: none;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+        padding: 10px 0;
+    }
+
+    .global-nav li:last-child {
+        border-bottom: none;
+    }
+    
+    .step-image, .step-desc {
+        float: none;
+        width: 100%;
+    }
+}
