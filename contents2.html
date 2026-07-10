@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>キットレビュー - 素組ビルダーの修行道</title>
     <link rel="stylesheet" href="css/mystyle.css">
+    
+    <style>
+        /* 新設：「買ったキット（罪プラ）一覧表」のスタイル */
+        .kit-list-section {
+            margin-top: 40px;
+            clear: both;
+        }
+
+        table.kit-list-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* 枠線とセルの余白設定 */
+        table.kit-list-table th, 
+        table.kit-list-table td {
+            border: 1px solid #e2e8f0;
+            padding: 12px 15px;
+            font-size: 90%;
+            text-align: left;
+        }
+
+        /* ヘッダー部分をサイトのテーマカラー（濃い青）に統一 */
+        table.kit-list-table th {
+            background-color: #003166;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* 最上部のタイトル「罪プラ」セルのデザイン */
+        table.kit-list-table th.main-title {
+            text-align: center;
+            font-size: 110%;
+            background-color: #002144; /* 表のヘッダーより少し濃い青 */
+            border-bottom: 2px solid #001122;
+        }
+
+        /* 行にマウスを乗せたときにわかりやすくするホバー効果 */
+        table.kit-list-table tbody tr:hover {
+            background-color: #f4f8fc;
+        }
+    </style>
 </head>
 <body>
 
@@ -61,6 +108,65 @@
                     </div>
                     <div class="clear-fix"></div>
                 </div>
+            </section>
+
+            <section class="content-section kit-list-section">
+                <h2>買ったキット（罪プラ）一覧</h2>
+                <p>現在確保している未組み立てのキットたちです。制作進捗に合わせて順次レビューしていきます。</p>
+                
+                <table class="kit-list-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="main-title">罪プラ</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 25%;">スケール</th>
+                            <th>キット名</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HG</td>
+                            <td>ガンダムAGE1 スパロー</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>プロヴィデンスガンダム</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>ガンダムレギルス</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>ユニコーンガンダム ペルフェクティビリティ</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>デスティニーガンダム</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>ムーンガンダム</td>
+                        </tr>
+                        <tr>
+                            <td>HG</td>
+                            <td>ガンダムキャリバーン</td>
+                        </tr>
+                        <tr>
+                            <td>RG</td>
+                            <td>Hi-νガンダム</td>
+                        </tr>
+                        <tr>
+                            <td>RG</td>
+                            <td>RX-93ff νガンダム</td>
+                        </tr>
+                        <tr>
+                            <td>RG</td>
+                            <td>フォースインパルスガンダムSpec Ⅱ</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             <p style="font-size:80%; color:#666; text-align:right;">レビュー閲覧日：<time datetime="2026-07-09">2026年7月9日</time></p>
